@@ -1,0 +1,68 @@
+.skills {
+    margin: auto;
+    width: 90%;
+    padding-top: 30px;
+}
+
+.icons-subtitle {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.icons-container {
+    margin: 60px auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+}
+
+.icons-container i {
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+    transition: transform 0.7s;
+}
+
+.icons-container i::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    color: black;
+    font-family: 'Open Sans', Arial, sans-serif;
+
+}
+
+.icons-container i:hover {
+    transform: translateY(-0.5rem);
+    cursor: pointer;
+}
+
+.icons-container i:hover::after {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .icons-container {
+        align-items: column;
+        margin: 60px auto;
+        justify-content: space-around;
+    }
+
+    .icons-container i {
+        margin-bottom: 100px;
+    }
+}

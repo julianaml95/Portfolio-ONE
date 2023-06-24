@@ -1,0 +1,10 @@
+body {
+    background-color: #bdc9d1;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContent {
+    margin-top: 50px; 
+}

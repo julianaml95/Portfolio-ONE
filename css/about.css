@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    background-color: aquamarine;
+    margin-top: 60px;
+    background-color: #FFF;
+    padding: 0;
+}
+
+.about-title  {
+    margin: 2px auto 0 auto;    
+    width: 84%;
+    padding-bottom: 30px;
+}
+
+.about-description  {
+    margin: 2px auto 0 auto;    
+    width: 84%;
+}
+
+

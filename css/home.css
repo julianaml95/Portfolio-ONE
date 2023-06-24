@@ -1,0 +1,40 @@
+.home {
+    margin: auto;
+    padding: 1px 0;
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.home-title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-top: -15px;
+}
+
+.home-subtitle {
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+
+.home-description {
+    text-align: justify;
+    display: flex;
+    width: 70%;
+}
+
+.home img {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    float: right;
+    margin-top: 30px;
+}
+
+.home-links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
