@@ -1,7 +1,7 @@
 .academic-background {
-    margin: auto;
-    width: 80%;
     padding-top: 30px;
+    background-color: black;
+    padding-bottom: 70px;
 }
 
 .academic-subtitle {
@@ -10,12 +10,16 @@
     margin-bottom: 10px;
     text-align: center;
     padding-bottom: 20px;
+    color: aliceblue;
 }
 
 .academic-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 0 8%;
+    width: 84%;
+    padding-top: 30px;
 }
 
 .card-academic {
@@ -24,12 +28,16 @@
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 300px;
+    width: 250px;
     transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
 }
 
 .card-academic:hover {
-    transform: translateY(-10px); /* Efecto de elevación al pasar el cursor sobre la tarjeta */
+    transform: translateY(-10px);
 }
 
 .card-header img {
@@ -76,3 +84,5 @@
     font-size: 13px;
     margin: 0 0 40px;
 }
+
+

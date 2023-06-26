@@ -1,7 +1,19 @@
-.skills {
+.icons {
     margin: auto;
-    width: 90%;
+    width: 100%;
     padding-top: 30px;
+    height: 400px;
+    align-items: center;
+}
+
+#skills {
+    background-color: black;
+    color: aliceblue;
+}
+
+#hobbies {
+    background-color: aliceblue;
+    color: black;
 }
 
 .icons-subtitle {
@@ -14,11 +26,11 @@
 
 .icons-container {
     margin: 60px auto;
-    width: 70%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 90px;
+    width: 70%;
 }
 
 .icons-container i {
@@ -41,7 +53,6 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     white-space: nowrap;
-    color: black;
     font-family: 'Open Sans', Arial, sans-serif;
 
 }

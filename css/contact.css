@@ -1,8 +1,10 @@
 .contact {
-    margin: auto;
     min-width: 25rem;
-    padding-top: 30px;
     background-color: #7a7878;
+    background-color: black;
+    color: aliceblue;
+    overflow: hidden;
+    padding-bottom: 70px;
 }
 
 .contact-subtitle {
@@ -106,4 +108,23 @@ form textarea {
     top: 30%;
     transform: translateY(-50%);
     color: #57565c;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        min-width: auto;
+        padding: 20px 10px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    .form-control {
+        padding-left: 2rem;
+    }
+
+    .form-control-m {
+        padding-left: 1rem;
+    }
 }

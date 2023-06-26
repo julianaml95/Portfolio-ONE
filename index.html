@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -22,59 +23,65 @@
 
     <header class="mainHeader">
         <div class="container">
-
-
+    
             <div class="navbar">
                 <h3 class="navbar-title">JULIANA</h3>
+                <input type="checkbox" id="navbar-toggle">
+                <label for="navbar-toggle" class="navbar-toggle-label">
+                </label>
                 <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Hobbies</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#academic-background">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-
+    
         </div>
     </header>
+    
 
     <main class="mainContent">
 
         <section class="home">
-            <div home-img>
-                <img src="images/profile-picture.jpg" alt="profile" alt="profile-picture" />
+
+            <div class="home-content">
+                <h2 class="home-title">Hi, I'm Juliana</h2>
+                <h4 class="home-subtitle">Front-End Developer</h4>
+                <div class="home-links">
+                    <a href="https://github.com/julianaml95" data-name="GitHub" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/julianamoralopez/" data-name="LinkedIn" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/cypherv_95/" data-name="Instagram" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <!-- <a href="#" target="_blank">Curriculum <i class="fa-solid fa-up-right-from-square"></i></a> -->
+                </div>
             </div>
 
-            <h2 class="home-title">Hi, I'm Juliana</h2>
-            <h4 class="home-subtitle">Front-End Developer</h4>
-            <div class="home-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eros sagittis sem, fusce nulla ligula
-                    suspendisse ultrices pulvinar integer ac orci, platea sapien dapibus pellentesque cum phasellus
-                    fringilla nascetur montes.</p>
-            </div>
 
-            <div class="home-links">
-                <a href="https://github.com/julianaml95" target="_blank">Github <i
-                        class="fa-solid fa-up-right-from-square"></i></a>
-                <a href="https://www.linkedin.com/in/julianamoralopez/" target="_blank">LinkedIn <i
-                        class="fa-solid fa-up-right-from-square"></i></a>
-                <a href="https://www.instagram.com/cypherv_95/" target="_blank">Instagram <i
-                        class="fa-solid fa-up-right-from-square"></i></a>
-                <a href="#" target="_blank">Curriculum <i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
         </section>
 
-        <section class="about">
-            <h2 class="about-title">About Me</h2>
-            <span class="about-description">Cras natoque quam lacus ante imperdiet dui nisl nulla, cubilia mattis sem
-                luctus vitae cursus id lacinia pretium, fames nam aenean parturient nisi mollis habitant. Porttitor eros
-                pulvinar ut sollicitudin etiam, bibendum hac pellentesque leo condimentum, facilisi sodales justo
-                semper. Libero sapien vehicula fringilla porttitor massa tristique pellentesque cursus, vivamus pharetra
-                litora suscipit tempor viverra hendrerit mi venenatis, nisi laoreet nostra tellus nisl pretium
-                phasellus.
-            </span>
+
+        <section class="about" id="about">
+            <div class="about-text">
+                <h2 class="about-title">About Me</h2>
+                <span class="about-description">Cras natoque quam lacus ante imperdiet dui nisl nulla, cubilia mattis
+                    sem
+                    luctus vitae cursus id lacinia pretium, fames nam aenean parturient nisi mollis habitant. Porttitor
+                    eros
+                    pulvinar ut sollicitudin etiam, bibendum hac pellentesque leo condimentum, facilisi sodales justo
+                    semper. Libero sapien vehicula fringilla porttitor massa tristique pellentesque cursus, vivamus
+                    pharetra
+                    litora suscipit tempor viverra hendrerit mi venenatis, nisi laoreet nostra tellus nisl pretium
+                    phasellus.
+                </span>
+            </div>
+            <button class="image"><img src="images/profile-picture.png"></button>
         </section>
+
 
         <section class="icons" id="skills">
             <h2 class="icons-subtitle">Skills</h2>
@@ -84,7 +91,7 @@
                 <i class="fa-brands fa-html5 fa-2xl" data-name="HTML 5" style="color: #ff6600;"></i>
                 <i class="fa-brands fa-square-js fa-2xl" data-name="JavaScript" style="color: #ffdd00;"></i>
                 <i class="fa-brands fa-css3-alt fa-2xl" data-name="CSS 3" style="color: #2965f1;"></i>
-                <i class="fa-brands fa-php fa-2xl" data-name="PHP" style="color: #232531;"></i>
+                <i class="fa-brands fa-php fa-2xl" data-name="PHP" style="color: #adadb1;"></i>
                 <i class="fa-brands fa-angular fa-2xl" data-name="Angular" style="color: #dd1b16;"></i>
                 <i class="fa-brands fa-git-alt fa-2xl" data-name="git" style="color: #f34f29;"></i>
                 <i class="fa-brands fa-github fa-2xl" data-name="GitHub" style="color: #424242;"></i>
@@ -107,7 +114,7 @@
             </div>
         </section>
 
-        <section class="academic-background">
+        <section class="academic-background" id="academic-background">
             <h2 class="academic-subtitle">Academic Background</h2>
 
             <div class="academic-container">
@@ -157,7 +164,7 @@
                 </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="projects-subtitle">Projects</h2>
 
             <div class="project-container">
@@ -190,14 +197,12 @@
                     </div>
                 </div>
 
-
-
             </div>
 
         </section>
 
-        <section class="contact">
-            
+        <section class="contact" id="contact">
+
             <div class="contact-container">
                 <form>
                     <h2 class="contact-subtitle">Contact Me</h2>
@@ -220,23 +225,30 @@
         </section>
     </main>
 
-    <footer>
-        <div class="social-icons">
-            <a href="#" target="_blank" title="Facebook"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" target="_blank" title="Facebook"><i class="fa-brands fa-github"></i></a>
-            <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <!-- Agrega más enlaces y iconos según tus necesidades -->
-        </div>
-        <div class="developer">
-            <p>By: <span>Juliana Mora López</span></p>
-            <p>Copyright &copy; 2023 All Rights Reserved.</p>
-        </div>
-        <div class="program-icon">
-            <img src="images/aluraoracle.png" alt="Logo Alura Latam + ORACLE">
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/julianamoralopez/" target="_blank" title="LinkedIn"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/julianaml95" target="_blank" title="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/Jlo17061" target="_blank" title="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/cypherv_95/?hl=es" target="_blank" title="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <div class="developer">
+                <p>By: <span>Juliana Mora López</span> <br> Copyright &copy; 2023 All Rights Reserved.</p>
+            </div>
+            <div class="program-icon">
+                <img src="images/aluraoracle.png" alt="Logo Alura Latam + ORACLE">
+            </div>
         </div>
     </footer>
 
+
+    <!-- Llamada al archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>

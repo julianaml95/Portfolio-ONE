@@ -3,19 +3,26 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    height: 20px;
+    height: 10px;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
     padding: 20px 8% ;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     z-index: 999;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+.navbar.scrolled {
+    background-color: #6b6b6b; /* Color sólido para el scroll */
 }
 
 .navbar h3 {
     margin-right: auto;
-    /* Alinea el h2 a la izquierda */
 }
 
 .nav-links {
@@ -23,7 +30,6 @@
     justify-content: flex-end;
     align-items: center;
     padding: 20px 15%;
-
 }
 
 .nav-links li {
@@ -35,7 +41,7 @@
 .nav-links li a {
     position: relative;
     color: #333;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
     padding: 6px 0;
     text-decoration: none;
@@ -60,4 +66,53 @@
 .nav-links li.center a:before {
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle-label {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 999;
+    }
+
+    .navbar-toggle-label span {
+        display: block;
+        height: 2px;
+        background: #333;
+        margin-bottom: 4px;
+        position: relative;
+        transition: background 0.2s ease-out;
+    }
+
+    .navbar-toggle-label span:last-child {
+        margin-bottom: 0;
+    }
+
+    .navbar-toggle-label:hover span {
+        background: #555;
+    }
+
+    .navbar-toggle-label input {
+        display: none;
+    }
+
+    .navbar-toggle-label input:checked ~ .nav-links {
+        max-height: 100%;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
