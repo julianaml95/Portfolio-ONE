@@ -21,31 +21,44 @@
 
 <body>
 
-    <header class="mainHeader">
-        <div class="container">
-    
-            <div class="navbar">
-                <h3 class="navbar-title">JULIANA</h3>
-                <input type="checkbox" id="navbar-toggle">
-                <label for="navbar-toggle" class="navbar-toggle-label">
-                </label>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#academic-background">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="nav-logo">JULIANA</h2>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#hobbies" class="nav-link">HOBBIES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#academic-background" class="nav-link">EDUCATION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">EXPERIENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-    
-        </div>
-    </header>
+        </nav>
+</header>
     
 
     <main class="mainContent">
 
-        <section class="home">
+        <section class="home" id="home">
 
             <div class="home-content">
                 <h2 class="home-title">Hi, I'm Juliana</h2>
@@ -95,7 +108,7 @@
                 <i class="fa-brands fa-angular fa-2xl" data-name="Angular" style="color: #dd1b16;"></i>
                 <i class="fa-brands fa-git-alt fa-2xl" data-name="git" style="color: #f34f29;"></i>
                 <i class="fa-brands fa-github fa-2xl" data-name="GitHub" style="color: #424242;"></i>
-
+                    
             </div>
         </section>
 
@@ -126,8 +139,7 @@
                     <div class="card-body">
                         <span class="tag tag-teal">High School</span>
                         <h4>
-                            Institucion Educativa San Franciso de Asis
-                        </h4>
+                            Institucion Educativa San Franciso de Asis</h4>
                         <p>
                             Tuquerres, Narino
                         </p>
@@ -165,7 +177,7 @@
         </section>
 
         <section class="projects" id="projects">
-            <h2 class="projects-subtitle">Projects</h2>
+            <h2 class="project-subtitle">Projects</h2>
 
             <div class="project-container">
 
@@ -173,12 +185,12 @@
                     <img src="images/encripter.png" alt="Imagen del proyecto">
 
                     <div class="project-details">
-                        <h3 class="projects-subtitle">Título del proyecto</h3>
-                        <p class="project-text">Descripción del proyecto.</p>
+                        <h3 class="projects-subtitle">Secret Text</h3>
+                        <p class="project-text">Is an application designed to encrypt texts, allowing you to communicate confidentially with individuals who are familiar with the encryption secret.</p>
 
                         <div class="project-buttons">
-                            <a href="URL_DEMO" target="_blank">Demo</a>
-                            <a href="URL_REPOSITORIO" target="_blank">Repositorio</a>
+                            <a href="https://julianaml95.github.io/EncriptadorDeTexto_ONE/" target="_blank">Demo</a>
+                            <a href="https://github.com/julianaml95/EncriptadorDeTexto_ONE" target="_blank">Repository</a>
                         </div>
                     </div>
                 </div>
@@ -245,7 +257,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- Llamada al archivo JavaScript -->
     <script src="script.js"></script>

@@ -29,7 +29,7 @@
 .home-subtitle {
     font-size: 32px;
     margin-bottom: 1px;
-    color: #f06868;
+    color: #fcfcfc;
 }
 
 .home-links {
@@ -111,3 +111,39 @@
     -ms-border-radius: 200px;
     -o-border-radius: 200px;
 }
+
+@media only screen and (max-width: 768px) {
+    .home {
+        height: 200px;
+    }
+  
+    .home-title {
+      font-size: 32px;
+      margin-top: 15px;
+    }
+  
+    .home-subtitle {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .home-links {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      position: static;
+      transform: none;
+      font-size: 20px;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+    }
+  
+    .home-links a {
+      margin-right: 10px;
+      margin-bottom: -10px;
+    }
+  }
+  

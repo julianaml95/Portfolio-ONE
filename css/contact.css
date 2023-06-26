@@ -1,7 +1,8 @@
 .contact {
     min-width: 25rem;
     background-color: #7a7878;
-    background-color: black;
+    background-image: url("../images/black.png");
+    background-size: cover;
     color: aliceblue;
     overflow: hidden;
     padding-bottom: 70px;
@@ -111,20 +112,8 @@ form textarea {
 }
 
 @media (max-width: 768px) {
-    .contact {
-        min-width: auto;
-        padding: 20px 10px;
-    }
-
-    form {
-        max-width: 100%;
-    }
-
-    .form-control {
-        padding-left: 2rem;
-    }
-
-    .form-control-m {
-        padding-left: 1rem;
-    }
+     .contact {
+        min-width: 1rem;
+     }   
 }
+

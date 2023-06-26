@@ -1,5 +1,5 @@
 .footer {
-    background-color: #f9f9f9;
+    background-color: rgb(211, 233, 252);
 }
 
 .footer-container {
@@ -17,8 +17,8 @@
 .social-icons a {
     display: inline-block;
     color: #555;
-    font-size: 40px;
-    margin-right: 10px; 
+    font-size: 20px;
+    margin-right: 10px;
     transition: color 0.3s ease;
 }
 
@@ -33,7 +33,7 @@
 
 .developer p {
     margin-bottom: 0px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .developer span {
@@ -41,30 +41,29 @@
 }
 
 .program-icon img {
-    max-width: 290px;
+    max-width: 170px;
     height: auto;
 }
 
 
 @media (max-width: 768px) {
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1rem;
-    }
 
-    .social-icons {
-        margin-top: 20px;
+    .social-icons a {
+        font-size: 19px;
     }
 
     .developer p {
-        text-align: center;
-        margin-bottom: -30px;
+        margin-bottom: 0px;
+        font-size: auto;
     }
 
-    .program-icon {
-        width: 100%;
-        margin-bottom: -20px;
+    .developer span {
+        font-weight: bold;
+    }
+
+    .program-icon img {
+        max-width: 200px;
+        height: auto;
     }
 }
+

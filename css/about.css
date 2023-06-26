@@ -1,16 +1,16 @@
 .about {
     display: flex;
     flex-direction: row;
-    height: 400px;
+    min-height: 400px;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(211, 233, 252);
     padding: 0;
+    bottom: 0;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #fff;
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
 
 .about-img {
@@ -39,15 +39,15 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-size: 3rem;
+    color: rgb(11, 139, 86);
+    font-weight: bold;
 }
 
 .about-description {
     margin: 0;
-    text-align: justify;
     padding: 25px 8%;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .image {
@@ -104,11 +104,6 @@
     transition: .5s, 600s linear transform;
 }
 
-.image:before {
-    
-}
-
-
 .image button>img {
     border-radius: 50%;
     left: -2px;
@@ -120,4 +115,45 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img {
+        text-align: center;
+        width: 100%;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .about img {
+        width: 146px;
+        margin-right: 10px;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 0 8%;
+        text-align: left;
+    }
+
+    .about-title {
+        padding-bottom: 5px;
+        font-size: 2.5rem;
+    }
+
+    .about-description {
+        padding: 25px 0;
+        font-size: 0.9rem;
+        
+    }
 }
